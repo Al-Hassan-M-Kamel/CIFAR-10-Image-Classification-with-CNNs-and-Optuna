@@ -3,3 +3,8 @@ datasets
 torchvision
 torchmetrics
 tqdm
+optuna
+joblib
+msg
+msgpack
+matplotlib
