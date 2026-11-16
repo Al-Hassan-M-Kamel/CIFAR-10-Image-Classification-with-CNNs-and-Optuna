@@ -67,13 +67,3 @@ The notebooks import `data_preprocess.py` and `help_utils.py`. Those helper file
 2. Run or load the Optuna study in `optuna_optimization.ipynb` and confirm which study file and completed-trial count you are using.
 3. In `cifar10_final_training.ipynb`, keep the seeded training/validation split, move best-checkpoint restoration outside the epoch loop, and rerun training.
 4. Use validation metrics to choose the checkpoint. Keep a fresh holdout untouched during further tuning and report its result only after model selection is complete.
-
-## CV entry
-
-**Project title:** CIFAR-10 Image Classification with CNNs and Optuna
-
-**CV bullet (recommended until the final run is corrected):**
-
-> Built a PyTorch CNN image-classification pipeline for CIFAR-10; compared learning-rate schedulers and used Optuna to optimize CNN depth, filters, kernel sizes, dropout, classifier width, and Adam learning rate. Trained with cosine annealing and tracked validation performance with checkpointing.
-
-After correcting checkpoint placement and rerunning with a properly reserved holdout, you can add the verified final test accuracy to the CV bullet. Avoid listing the current 77.69% as an unbiased test result.
